@@ -80,7 +80,6 @@ public class LRU extends PageReplacementAlgorithm {
                 //update the page table and return
                 arrFrames[victimFrame] = pageNumber;
                 frameNumber = nextLoadLocation;
-                nextLoadLocation = victimFrame;
             }
             System.out.printf("PAGE FAULT >> PAGE %d LOADED INTO FRAME %d\n", pageNumber, frameNumber);
         }
